@@ -22,10 +22,11 @@ public class FrogSimulation
 		  numHops++;
 		   if (pos < 0){
 		     return false;
-		   } else {
+		   } else if (pos >= goalDistance){
 		     return true;
 		   }
 		}
+		return false;
 	}
 	
 	public double runSimulations(int num)
